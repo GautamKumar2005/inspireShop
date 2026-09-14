@@ -232,7 +232,7 @@ export default function OrderDetailsPage() {
   const isPaymentPending = order.paymentStatus !== "PAID" && !["DELIVERED", "COMPLETED", "CANCELLED"].includes(order.status);
 
   // Generate real dynamic scan-ready UPI payment string
-  const upiUrl = `upi://pay?pa=inspireshop@upi&pn=InspireShop&am=${order.totalAmount}&tr=${order._id}&cu=INR`;
+  const upiUrl = `upi://pay?pa=inspireshop@upi&pn=Inspireshop&am=${order.totalAmount}&tr=${order._id}&cu=INR`;
   const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(upiUrl)}`;
 
   return (

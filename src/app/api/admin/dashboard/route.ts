@@ -97,8 +97,8 @@ export async function GET(req: NextRequest) {
         }
     } catch(e) {}
 
-    // Rankings lists across social and inspireShop
-    // 1. Top Sellers (inspireShop)
+    // Rankings lists across social and Inspireshop
+    // 1. Top Sellers (Inspireshop)
     const topSellersAgg = await Order.aggregate([
       { $group: { _id: "$seller", totalSales: { $sum: "$totalAmount" }, ordersCount: { $sum: 1 } } },
       { $sort: { totalSales: -1 } },
@@ -118,7 +118,7 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    // 2. Most Bought Products (inspireShop)
+    // 2. Most Bought Products (Inspireshop)
     const topProductsAgg = await Order.aggregate([
       { $unwind: "$items" },
       { $group: { _id: "$items.product", salesCount: { $sum: "$items.quantity" }, totalEarnings: { $sum: { $multiply: ["$items.price", "$items.quantity"] } } } },
@@ -140,7 +140,7 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    // 3. Most Viewed Products (inspireShop)
+    // 3. Most Viewed Products (Inspireshop)
     const dbViewed = await Product.find({ isActive: true })
       .select("name price images views")
       .sort({ views: -1 })

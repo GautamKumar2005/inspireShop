@@ -1114,10 +1114,10 @@ export default function AdminDashboard() {
                      />
                   </div>
 
-                  {/* inspireShop Rankings Section */}
+                  {/* Inspireshop Rankings Section */}
                   <div className="space-y-4">
                      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 flex items-center gap-2 border-b border-gray-100 dark:border-gray-800 pb-2">
-                        🛍️ inspireShop Top Performances
+                        🛍️ Inspireshop Top Performances
                      </h3>
                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {/* Top Sellers */}
