@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     let userDetails = {
       id: decoded.id,
       name: "System Admin",
-      email: process.env.ADMIN_MAIL || "admin@insipreshop.com",
+      email: process.env.ADMIN_MAIL || "admin@inspireshop.com",
       role: "admin"
     };
 

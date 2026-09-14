@@ -46,7 +46,7 @@ const Header = () => {
           }
           className="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 transition-all hover:scale-105 active:scale-95 flex-shrink-0"
         >
-          Insipreshop
+          Inspireshop
         </Link>
 
         {/* Desktop Nav */}

@@ -12,7 +12,7 @@ export function ThemeProvider({
       attribute="class"
       defaultTheme="system"
       enableSystem
-      storageKey="insipreshop-theme"
+      storageKey="inspireshop-theme"
       disableTransitionOnChange={false}
       {...props}
     >

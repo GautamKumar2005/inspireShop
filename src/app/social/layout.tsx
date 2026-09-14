@@ -58,7 +58,7 @@ const SocialLayoutInner = ({ children }: { children: React.ReactNode }) => {
       {/* Single-row Compact Header */}
       <header className="sticky top-0 z-[110] w-full border-b border-gray-100 dark:border-gray-900 bg-white/80 dark:bg-[#070707]/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 h-12 flex items-center gap-2 sm:gap-3">
-          {/* Main → Insipreshop home */}
+          {/* Main → Inspireshop home */}
           <Link href="/" className="shrink-0 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors px-1">
             Main
           </Link>

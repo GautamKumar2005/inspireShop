@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Insipreshop",
+  title: "Inspireshop",
   description: "Modern E-commerce Platform",
 };
 
