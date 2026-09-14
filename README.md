@@ -69,7 +69,7 @@ RAZORPAY_KEY_SECRET=your_key_secret
 1. **Clone the repository**:
    ```bash
    git clone <your-repo-url>
-   cd starta
+   cd inspireshop
    ```
 
 2. **Install dependencies**:
